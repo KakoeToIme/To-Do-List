@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+}
+
+.page-container {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#0E1C5A, #F38D68);
+}
+
+.app-container {
+    display: grid;
+    position: absolute;
+    border: none;
+    border-radius: 36px;
+    width: 30vw;
+    height: 50vh;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    grid-template-rows: 1fr 1fr 3fr;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #0E1C5A;
+}
+
+.search-field-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: auto;
+}
+
+.search-field {
+    display: flex;
+    position: relative;
+    width: 24vw;
+    height: 6vh;
+    grid-template-columns: 6fr 1fr;
+}
+
+.search-field > input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 36px;
+    background-color: #f0f0f0;
+    padding-left: 24px;
+    padding-right: 5vw;
+    color: #676b6e;
+    font-weight: 600;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.search-button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 5vw;
+    height: 100%;
+    background-color: #F38D68;
+    border-radius: 36px;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    cursor: pointer;
+}
+
+.task-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
