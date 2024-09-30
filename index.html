@@ -16,17 +16,11 @@
             </div>
             <div class="search-field-container">
                 <div class="search-field">
-                    <input id="task-input" type="search" value="Add your task" onclick="deleteDefaultInputFieldValue()">
-                    <div class="search-button">Add</div>
+                    <input id="task-input" type="search" placeholder="Add your task" autocomplete="off">
+                    <div class="search-button" onclick="addTask()">Add</div>
                 </div>
             </div>
-            <div class="task-container">
-                <div class="task"></div>
-                <div class="task"></div>
-                <div class="task"></div>
-                <div class="task"></div>
-                <div class="task"></div>
-            </div>
+            <div class="task-container"></div>
         </div>
     </div>
     <script src="script.js"></script>

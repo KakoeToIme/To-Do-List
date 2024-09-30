@@ -56,7 +56,7 @@
 .search-field {
     display: flex;
     position: relative;
-    width: 24vw;
+    width: 26vw;
     height: 6vh;
     grid-template-columns: 6fr 1fr;
 }
@@ -102,5 +102,39 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .task-container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.task-radio-button {
+    display: flex;
+    border: 3px solid #E0E0E0;
+    border-radius: 50%;
+    width: 1.5vw;
+    aspect-ratio: 1 / 1;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.task-text {
+    display: flex;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+    padding-left: 0.75vw;
+    font-weight: 600;
+    color: #676b6e;
+    width: 23vw;
+}
+
+.task-delete-button {
+    display: flex;
+    width: 1.5vw;
+    aspect-ratio: 1 / 1;
+    background-image: url('./resources/Krestiksvgpng.ru_.png'); 
+    cursor: pointer;
 }
