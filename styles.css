@@ -100,14 +100,23 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
+.scrollable-task-container {
+    display: grid;
+    max-height: auto; 
+    overflow-y: auto; 
+}
+
 .task-container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 1vh;
+    align-items: center;
+    grid-template-rows: repeat(4, 6vh);
 }
 
 
 .task {
     display: flex;
+    height: 6vh;
     align-items: center;
 }
 
@@ -123,12 +132,39 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .task-text {
     display: flex;
+    align-items: center;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 16px;
     padding-left: 0.75vw;
+    overflow: hidden;
     font-weight: 600;
     color: #676b6e;
+    margin-right: 0.5vw;
+    white-space: nowrap;
     width: 23vw;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 30vw; 
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background-color: #fff;
+    color: #676b6e;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 999;
+    bottom: 125%; 
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.task:hover .tooltip {
+    visibility: visible; 
+    opacity: 1; 
 }
 
 .task-delete-button {
