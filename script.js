@@ -97,5 +97,3 @@ const logAllLocalStorageData = () => {
         console.log(`${key}: ${task}`);
     }
 }
-
-// Адаптировать верстку для разных экранов

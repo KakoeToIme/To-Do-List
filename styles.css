@@ -172,5 +172,78 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 1.5vw;
     aspect-ratio: 1 / 1;
     background-image: url('./resources/Krestiksvgpng.ru_.png'); 
+    background-repeat: no-repeat;
     cursor: pointer;
 }
+
+@media (min-width: 1025px) and (max-width: 1296px) {
+    .app-container {
+        width: 50vw; 
+    }
+
+    .search-field-container {
+        width: 50vw;
+    }
+
+    .search-field {
+        width: 43vw;
+    }
+
+    .search-button {
+        width: 8vw;
+    }
+
+    .task-radio-button {
+        margin-left: 3.5vw;
+        width: 2vw;
+    }
+
+    .task-text {
+        width: 38.5vw;
+    }
+
+    .task-delete-button {
+        width: 2vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .app-container {
+        width: 70vw; 
+        height: 80vh;
+    }
+
+    .search-field-container {
+        width: 70vw;
+    }
+
+    .search-field {
+        width: 60vw;
+    }
+
+    .search-button {
+        width: 12vw;
+    }
+
+    .task-container {
+        grid-template-rows: repeat(6, 6vh);
+    }
+
+    .task-radio-button {
+        margin-left: 5vw;
+        width: 2.5vw;
+    }
+
+    .task-text {
+        width: 56vw;
+    }
+
+    .task-delete-button {
+        width: 2.5vw;
+    }
+
+    .task:hover .tooltip {
+        visibility: hidden; 
+    }
+}
+
