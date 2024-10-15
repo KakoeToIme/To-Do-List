@@ -103,7 +103,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .scrollable-task-container {
     display: grid;
     max-height: auto; 
-    overflow-y: auto; 
+    overflow-y: auto;
+    overflow-x: hidden; 
 }
 
 .task-container {
@@ -207,7 +208,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     .app-container {
         width: 70vw; 
         height: 80vh;
@@ -218,7 +219,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     .search-field {
-        width: 60vw;
+        width: 64vw;
     }
 
     .search-button {
@@ -235,7 +236,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     .task-text {
-        width: 56vw;
+        width: 55vw;
     }
 
     .task-delete-button {
@@ -246,4 +247,105 @@ input[type="search"]::-webkit-search-results-decoration {
         visibility: hidden; 
     }
 }
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .task-radio-button {
+        margin-left: 5vw;
+        width: 3vw;
+    }
+
+    .task-delete-button {
+        width: 3vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .app-container {
+        width: 90vw; 
+        height: 80vh;
+    }
+
+    .search-field-container {
+        width: 90vw;
+    }
+
+    .search-field {
+        width: 82vw;
+    }
+
+    .search-button {
+        width: 16vw;
+    }
+
+    .task-container {
+        grid-template-rows: repeat(7, 6vh);
+    }
+
+    .task-radio-button {
+        margin-left: 5vw;
+        width: 4vw;
+    }
+
+    .task-text {
+        width: 72vw;
+    }
+
+    .task-delete-button {
+        width: 4vw;
+    }
+
+    .task:hover .tooltip {
+        visibility: hidden; 
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        width: 90vw; 
+        height: 80vh;
+    }
+
+    .search-field-container {
+        width: 90vw;
+    }
+
+    .search-field {
+        width: 82vw;
+    }
+
+    .search-button {
+        width: 18vw;
+    }
+
+    .task-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .task {
+        height: auto;
+        padding: 1vh 0;
+    }
+
+    .task-radio-button {
+        margin-left: 5vw;
+        width: 5vw;
+    }
+
+    .task-text {
+        width: 68vw;
+        white-space: normal;
+        margin-left: 2vw;
+    }
+
+    .task-delete-button {
+        width: 6vw;
+    }
+
+    .task:hover .tooltip {
+        visibility: hidden; 
+    }
+}
+
+
 
